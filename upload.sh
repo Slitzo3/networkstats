@@ -1,3 +1,10 @@
+//CONFIG
+host_config = "localhost"
+port_config = "21"
+user_config = ""
+passwd_config = ""
+//
+
 #myip="$(dig +short myip.opendns.com @resolver1.opendns.com)"
 
 hostname1="$HOSTNAME"
@@ -16,9 +23,9 @@ now=`date +"%Y-%m-%d-%H-%M-%S"`
 
 #sudo vnstat -h -i ens160 > $myip-${now}.txt
 
-HOST=''
-USER=''
-PASSWD=''
+HOST='host_config'
+USER='port_config'
+PASSWD='passwd_config'
 FILE=$myip-${now}.txt
 
 ftp -n $HOST <<END_SCRIPT

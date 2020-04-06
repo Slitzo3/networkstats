@@ -7,9 +7,9 @@ passwd_config = ""
 
 #myip="$(dig +short myip.opendns.com @resolver1.opendns.com)"
 
-hostname1="$HOSTNAME"
+hostname_variable="$HOSTNAME"
 
-sudo vnstat -h -i ens160 > $hostname1-${now}.txt
+sudo vnstat -h -i ens160 > $hostname_variable-${now}.txt
 
 now=`date +"%Y-%m-%d-%H-%M-%S"`
 
